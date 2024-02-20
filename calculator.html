@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+   <!-- <table>
+        <tr>
+            </td><td><button>1</button></td>
+            </td><td><button>2</button></td>
+            </td><td><button>3</button></td>
+        </tr>
+
+        <tr>
+            </td><td><button>4</button></td>
+            </td><td><button>5</button></td>
+            </td><td><button>6</button></td>
+        </tr>
+
+        <tr>
+            </td><td><button>7</button></td>
+            </td><td><button>8</button></td>
+            </td><td><button>9</button></td>
+        </tr>
+        
+        <tr>
+            </td><td><button>+</button></td>
+            </td><td><button>-</button></td>
+            </td><td><button>=</button></td>
+        </tr>
+    
+      </table> -->
+
+      <table>
+        <tr>
+        </td><button onclick="
+            claculate1();
+        ">+</button>
+        </td>
+
+        </td><button onclick="
+            calculate2();
+        ">-</button>
+        </td>
+    </tr>
+
+      </table>
+      
+      <script>
+
+        let firstNumber = parseFloat(prompt("please enter your fist number :"));
+        let secondNumber = parseFloat(prompt("Please enter your second number :"));
+
+        let result =0;
+        alert('please specify witch operation you want:');
+
+        function claculate1 (){
+            result = firstNumber + secondNumber;
+            alert( `Your answer is ${result}`);
+           // return result;
+        }
+
+        function calculate2 (){
+            result = firstNumber - secondNumber;
+            alert( `Your answer is ${result}`);
+           // return result;
+        }
+
+      </script>
+    
+</body>
+</html>
